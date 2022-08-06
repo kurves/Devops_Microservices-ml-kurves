@@ -1,0 +1,16 @@
+NAME                                     READY   STATUS    RESTARTS      AGE
+kurves-sklearn-app-7f877fbc8-rqwb9       1/1     Running   1 (33m ago)   55m
+kurves-sklearn-python-77c7566775-ll4jf   1/1     Running   0             70m
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
+2022-08-06 22:56:46,881] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-08-06 22:56:46,891] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-08-06 22:56:46,900] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-08-06 22:56:46,903] INFO in app: Prediction: 
+[20.35373177134412]
+127.0.0.1 - - [06/Aug/2022 22:56:46] "POST /predict HTTP/1.1" 200 -

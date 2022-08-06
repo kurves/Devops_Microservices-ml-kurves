@@ -5,14 +5,14 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-
+dockerpath=kurves/kurves-sklearn-python
 # Step 2
 # Run the Docker Hub container with kubernetes
-
+kubectl create deploy kurves-sklearn-python --image=kurves/kurves-sklearn-pytho
 
 # Step 3:
 # List kubernetes pods
-
+kubectl get pods
 # Step 4:
 # Forward the container port to a host
-
+kubectl port-forward pod/kurves-sklearn-python-77c7566775-ll4jf  --address 0.0.0.0 8000:80
