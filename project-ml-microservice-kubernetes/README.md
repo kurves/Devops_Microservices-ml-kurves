@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/kurves/Devops_Microservices-ml-kurves/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/kurves/Devops_Microservices-ml-kurves/tree/master)
 
 ## Project Overview
 
