@@ -1,10 +1,11 @@
 ## Cloud DevOps ND - C4- Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
+This project involves operatinalizing a Machine learning microservice API using docker and Kubernetes.This is done through containerising and deploying the machine learning service using kubernetes.
 
-This repository is associated with Cloud DevOps ND - Course 04 - Microservices at Scale using AWS & Kubernetes. In here, you'll find:
-1. Supporting material used in the video demonstration in the course 
+The repository contains;
+1. Supporting material
 1. Starting code for a project, in which you can containerize and deploy a machine learning srevice using Kubernetes.
 
----
+
 
 ### A. Dependencies
 #### A.1. Python
@@ -22,27 +23,10 @@ You would need to install any one tool for creating a Kubernetes cluster - KubeO
 1. [Install and Set Up kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) directly on top of Docker desktop - For Windows/macOS
 2. [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) - For Linux/macOS
 
-#### A.4. AWS account to access AWS Lambda
-You'll need an [AWS account](https://aws.amazon.com/free/?all-free-tier.&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc) to get started with [AWS Lambda](https://aws.amazon.com/lambda/), which is a serverless computing platform on cloud.  
-
 #### A.5. An account with Circle CI
 You may sign up on [CircleCI.com](https://circleci.com/signup/) with your GitHub credentials. 
 
 ---
-
-### B. The Overarching Diagram
-
-![Overview](https://camo.githubusercontent.com/bb29cd924f9eb66730bbf7b0ed069a6ae03d2f1a/68747470733a2f2f757365722d696d616765732e67697468756275736572636f6e74656e742e636f6d2f35383739322f35353335343438332d62616537616638302d353437612d313165392d393930392d6135363231323531303635622e706e67)
-
----
-
-### C. Tutorials
-
-#### C.1. AWS Lambda & Serverless
-
-* [Making Change](https://github.com/udacity/DevOps_Microservices/tree/master/lambda-functions/make-change-tutorial): Create and deploy a serverless lambda function that responds to an input request; this example creates the correct amount of change to make up a value in US dollars.
-* [Wikipedia Query](https://github.com/udacity/DevOps_Microservices/tree/master/lambda-functions/wikipedia-query): Deploy a lambda function that responds to an input, wikipedia page query; this example returns the first sentence of a specific wikipedia page upon being queried.
-
 
 ### D. Project Instructions
 
@@ -53,13 +37,8 @@ To run any project code, you'll have to set up a virtual environment with the pr
 ### E. Create and Activate an Environment
 
 #### E.1. Git and version control
-These instructions also assume you have `git` installed for working with Github from a terminal window, but if you do not, you can download that first from this [Github installation page](https://www.atlassian.com/git/tutorials/install-git).
 
-**Now, you're ready to create your local environment!**
-
-1. If you haven't already done so, clone the project repository, and navigate to the main project folder. 
-```bash
-git clone https://github.com/udacity/DevOps_Microservices.git
+git clone  https://github.com/kurves/Devops_Microservices-ml-kurves.git
 cd DevOps_Microservices/project-ml-microservice-kubernetes
 ```
 
@@ -69,16 +48,10 @@ python3 -m venv ~/.devops
 source ~/.devops/bin/activate
 ```
 
-At this point your command line should look something like: `(.devops) <User>:project-ml-microservice-kubernetes<user>$`. The `(.devops)` indicates that your environment has been activated, and you can proceed with further package installations.
-
 3. Installing dependencies via project `Makefile`. Many of the project dependencies are listed in the file `requirements.txt`; these can be installed using `pip` commands in the provided `Makefile`. While in your project directory, type the following command to install these dependencies.
 ```bash
 make install
 ```
-
-Now most of the `.devops` libraries are available to you. There are a couple of other libraries that we'll be using, which can be downloaded as specified, below. 
-
----
 
 #### E.2. Other Libraries
 
