@@ -1,4 +1,5 @@
-## Cloud DevOps ND - C4- Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
+## Cloud DevOps Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
+
 This project involves operatinalizing a Machine learning microservice API using docker and Kubernetes.This is done through containerising and deploying the machine learning service using kubernetes.
 
 The repository contains;
